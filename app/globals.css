@@ -1,14 +1,87 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiragino Kaku Gothic";
+  src: url("/fonts/Hiragino Kaku Gothic StdN W8.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary colors */
+  --primary-blue: #2f80ed;
+  --primary-dark-gray: #4f4f4f;
+  --primary-gray: #828282;
+  --primary-light-gray: #e0e0e0;
+
+  /* Indicator colors */
+  --indicator-orange: #f8b76b;
+  --indicator-purple: #8785ff;
+  --indicator-red: #eb5757;
+  --indicator-yellow: #f2c94c;
+
+  /* Chat colors */
+  --chat-light-orange: #fceed3;
+  --chat-light-purple: #eedcff;
+  --chat-light-green: #d2f2ea;
+
+  /* Chat indicator colors */
+  --chat-indicator-orange: #e5a443;
+  --chat-indicator-purple: #9b51e0;
+  --chat-indicator-green: #43b78d;
+
+  /* Sticker colors */
+  --sticker-light-blue: #e9f3ff;
+  --sticker-light-orange: #fdcfa4;
+  --sticker-light-yellow: #f9e9c3;
+  --sticker-light-green-1: #afebdb;
+  --sticker-light-green-2: #cbf1c2;
+  --sticker-light-purple: #cfcef9;
+  --sticker-light-pink: #f9e0fd;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-primary-blue: var(--primary-blue);
+  --color-primary-dark-gray: var(--primary-dark-gray);
+  --color-primary-gray: var(--primary-gray);
+  --color-primary-light-gray: var(--primary-light-gray);
+  --color-indicator-orange: var(--indicator-orange);
+  --color-indicator-purple: var(--indicator-purple);
+  --color-indicator-red: var(--indicator-red);
+  --color-indicator-yellow: var(--indicator-yellow);
+  --color-chat-light-orange: var(--chat-light-orange);
+  --color-chat-light-purple: var(--chat-light-purple);
+  --color-chat-light-green: var(--chat-light-green);
+  --color-chat-indicator-orange: var(--chat-indicator-orange);
+  --color-chat-indicator-purple: var(--chat-indicator-purple);
+  --color-chat-indicator-green: var(--chat-indicator-green);
+  --color-sticker-light-blue: var(--sticker-light-blue);
+  --color-sticker-light-orange: var(--sticker-light-orange);
+  --color-sticker-light-yellow: var(--sticker-light-yellow);
+  --color-sticker-light-green-1: var(--sticker-light-green-1);
+  --color-sticker-light-green-2: var(--sticker-light-green-2);
+  --color-sticker-light-purple: var(--sticker-light-purple);
+  --color-sticker-light-pink: var(--sticker-light-pink);
+  --font-lato: "Lato", sans-serif;
+  --font-hiragino: "Hiragino Kaku Gothic", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +95,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
